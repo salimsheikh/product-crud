@@ -16,14 +16,31 @@ Make sure that you have setup the environment properly. You will need minimum PH
 
 
 ## Commands
+
 ### Install Laravel
+
+```base
+git clone https://github.com/salimsheikh/product-crud.git
+```
+
+### Clone Project
 ```base
 composer install
+```
+
+### Clone Generate key
+```base
+php artisan key:generate --ansi
 ```
 
 ### Migrate
 ```base
 php artisan migrate
+```
+
+### Migrate and Seed
+```base
+php artisan migrate:fresh --seed
 ```
 
 ### Seed Product Data
@@ -34,4 +51,4 @@ php artisan db:seed --class=ProductSeeder
 ### Start Server
 ```base
 php artisan serve
-````
+```

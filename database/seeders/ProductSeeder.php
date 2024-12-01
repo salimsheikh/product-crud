@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
     {
         $products = [];
 
-        for ($i = 1; $i <= 50; $i++) {
+        for ($i = 1; $i <= 500; $i++) {
             $products[] = [
                 'code' => 'PROD-' . str_pad($i, 4, '0', STR_PAD_LEFT),
                 'name' => 'Product ' . $i,
